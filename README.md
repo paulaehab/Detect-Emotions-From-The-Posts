@@ -39,7 +39,7 @@ The authors constructed a set of hashtags to collect a separate dataset of Engli
 Dataset link: https://www.kaggle.com/parulpandey/emotion-dataset  
 Second dataset is a collection of tweets annotated with the emotions behind them with 13 emotions  
 Dataset link: https://www.kaggle.com/pashupatigupta/emotion-detection-from-text  
-I used a mix between the two datasets to provide a data set with the following emotion (Angry - Happy - Sad - Neutral - Love) 
+I used a merged version between the two datasets to provide a data set with the following emotion (Angry - Happy - Sad - Neutral - Love) 
 ### 2- Data Preprocessing and Data cleaning
 #### Data Preprocessing
 I merged the two datasets to get a full dataset with the four emotions and you can find the code of merging in 
@@ -60,8 +60,8 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  8- Stem each word in the text which mean reducing a word to its word stem that affixes to suffixes and prefixes
  ## Approaching models  
  ### First classical machine learning  model  
- I made a mchine learning model on the first dataset to detect 5 emotions (Sad - Happy - Love - Anger - Fear - Surprise)  
- I used the first dataset and train a Lazzycalssifier on cloud to test 27 calssifications model for me,  
+ I made a mchine learning model on the first dataset to detect 6 emotions (Sad - Happy - Love - Anger - Fear - Surprise)  
+ I used the first dataset and train a Lazzycalssifier on cloud to test 27 mahcine learning  models for me,  
  and it give me that the following three models is the best ones:  
  1- PassiveAggressiveClassifier which gave me accuracy = 87.29%  
  2- LogisticRegression which gave me accuracy = 85.5%  
