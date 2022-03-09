@@ -75,7 +75,7 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  2- LogisticRegression which gave me accuracy =  88.41%  
  3-XGBClassifier which gave me accuracy = 89.78%  
  as we can see the accuracy is increased a little and the XGBClassifier is doing well with this problem.  
- you can find the code in the following folder: ``Final Approach/Best Classical model.ipynb```  
+ you can find the code in the following folder: ```Final Approach/Best Classical model.ipynb```  
  Also I saved the wieghts of the model for future use you can find it in the following folder ```Final Approach/finalized_model.sav```  
  ### Deep learning approach 
  I tried to build a deep learning model hopping to increase accuracy of the model  
