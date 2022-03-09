@@ -71,9 +71,9 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  I get a data wit 7 emotions but as tha result of mergeing is Unbalanced data I had to drop out the (Fear - Surprise ) emotions,  
  so this model will predict only the following emotions ( Sad - Happy - Love - Anger - Neutral )  
  also I run lazzy classfier and give me the same 3 model which are the following:  
- 1- PassiveAggressiveClassifier which gave me accuracy =  88.68%%  
- 2- LogisticRegression which gave me accuracy =  88.41%  
- 3-XGBClassifier which gave me accuracy = 89.78%  
+ 1- PassiveAggressiveClassifier which gave me accuracy =  91.15%  
+ 2- LogisticRegression which gave me accuracy =  85.87%    
+ 3-XGBClassifier which gave me accuracy = 89.54%  
  as we can see the accuracy is increased a little and the XGBClassifier is doing well with this problem.  
  you can find the code in the following folder: ```Final Approach/Best Classical model.ipynb```  
  Also I saved the wieghts of the model for future use you can find it in the following folder ```Final Approach/finalized_model.sav```  
@@ -84,8 +84,8 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  you can find the model in the following folder ```Final models/deep learnig model.ipynb```  
  
   ## Conclusion 
-  the second classical machine learning which is working on Passive Aggressive Classfier algorithum  was the best model between all models which gave me the best accuracy which is :90.07%  
-  it approximately to 90% and it work very good to detect the following emotions ( Sad - Happy - Love - Anger - Neutral )  
+  the second classical machine learning which is working on Passive Aggressive Classfier algorithum  was the best model between all models which gave me the best accuracy which is :91.15%  
+   it works very good to detect the following emotions ( Sad - Happy - Love - Anger - Neutral )  
   so I used this model for deployment and for final results  
    ## Deployment
    I used Heroku cloud application platform  to deploy a Streamlit application to test the model on it  
