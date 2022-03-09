@@ -10,10 +10,10 @@ you have to install python > 3.7.0, you can download python for windows from her
 pip install --upgrade virtualenv
 virtualenv  envname
 cd envname/
-cd Scripts/
+cd bin/
 activate
-cd..
-cd..
+cd ..
+cd ..
 
 pip install -r requirements.txt
 ```
