@@ -1,7 +1,7 @@
 # Detect Emotions From Posts
 
 #### This is a machine learning algorithum to detect emotions (Angry - Happy - Sad - Neutral - Love) from humans' posts.
-
+Kindly use  this deployed model to test: https://emotion-analysis-from-text.herokuapp.com/  
 ## How to run the code.
 you have to install python > 3.7.0, you can download python for windows from here: https://www.python.org/downloads/windows/
 
@@ -26,11 +26,9 @@ streamlit run app.py
 python train.py
 ```
 ### Run the prediction script
+
 ```
-python predict.py --csv path/to/file.csv
-```
-```
-python predict.py --text any_text
+python predict.py --text use_your_text
 ```
 ## About Dataset.
 ### 1- Data collection
@@ -43,7 +41,7 @@ I used a merged version between the two datasets to provide a data set with the 
 ### 2- Data Preprocessing and Data cleaning
 #### Data Preprocessing
 I merged the two datasets to get a full dataset with the four emotions and you can find the code of merging in 
- ``` Final model/create new data set .ipynb``` and result is saved to ```Final model/ merged data```   
+ ```Final Approach/create new data set .ipynb``` and result is saved to ```Final Approach/merged_dataset```   
 The result dataset in conatin :  
 1- train.csv consists of: 16200 records  
 2- test.csv consists of: 2200 records  
@@ -67,7 +65,7 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  2- LogisticRegression which gave me accuracy = 85.5%  
  3-XGBClassifier which gave me accuracy = 87.56%  
  In this solution the XGBClassifier seem to be the best model for the problem 
- you can find the model in the following folder: ```/Fisrt model with first dataset/first classical model .ipynb```  
+ you can find the model in the following folder: ```/First Trial Without Neutral CLass - Accuracy 88%/first classical model .ipynb```  
  ### Second classical machine learning  model
  The problem with the first model was it detect 5 emotions but now Neutral emotion between them so after mergeing two datasets,  
  I get a data wit 7 emotions but as tha result of mergeing is Unbalanced data I had to drop out the (Fear - Surprise ) emotions,  
@@ -77,8 +75,8 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  2- LogisticRegression which gave me accuracy =  88.41%  
  3-XGBClassifier which gave me accuracy = 89.78%  
  as we can see the accuracy is increased a little and the XGBClassifier is doing well with this problem.  
- you can find the code in the following folder: ```Final models/Best Classical model.ipynb```  
- Also I saved the wieghts of the model for future use you can find it in the following folder ```Final models/finalized_model.sav```  
+ you can find the code in the following folder: ``Final Approach/Best Classical model.ipynb```  
+ Also I saved the wieghts of the model for future use you can find it in the following folder ```Final Approach/finalized_model.sav```  
  ### Deep learning approach 
  I tried to build a deep learning model hopping to increase accuracy of the model  
  I used keras library to build my deep learning archticture and searched for a good archticture and found a one  
@@ -86,10 +84,12 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  you can find the model in the following folder ```Final models/deep learnig model.ipynb```  
  
   ## Conclusion 
-  the second classical machine learning which is working on XGBClassifier algorithum  was the best model between all models which gave me the best accuracy which is : 89.78%  
+  the second classical machine learning which is working on Passive Aggressive Classfier algorithum  was the best model between all models which gave me the best accuracy which is :90.07%  
   it approximately to 90% and it work very good to detect the following emotions ( Sad - Happy - Love - Anger - Neutral )  
   so I used this model for deployment and for final results  
    ## Deployment
+   I used Heroku cloud application platform  to deploy a Streamlit application to test the model on it  
+   you will find the model here : https://emotion-analysis-from-text.herokuapp.com/ 
    
   ## References 
   Datasets References :  
