@@ -55,7 +55,8 @@ The dataset labels is as the following {0:'sad', 1:'happy', 2:'love', 3:'anger',
  5-Remove any URLS in text using function ```cleaning_URLs``` in the code  
  6- Remove any number in text using function ```cleaning_numbers``` in the code     
  7- Remove any stop words in text like (the - this - any -etc.)  
- 8- Stem each word in the text which mean reducing a word to its word stem that affixes to suffixes and prefixes
+ 8- Stem each word in the text which mean reducing a word to its word stem that affixes to suffixes and prefixes  
+ 9- using TFIDF algorithum to to transfer the text to numerical vectors in which the mahcine learning model can under stand it  
  ## Approaching models  
  ### First classical machine learning  model  
  I made a mchine learning model on the first dataset to detect 6 emotions (Sad - Happy - Love - Anger - Fear - Surprise)  
